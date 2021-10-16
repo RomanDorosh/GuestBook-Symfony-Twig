@@ -49,8 +49,7 @@ class AdminController extends AbstractController
 
         if ($accepted) {
             $reviewUrl = $this->generateUrl('review_comment', ['id' => $comment->getId()], UrlGeneratorInterface::ABSOLUTE_URL);
-            //need to fix
-            $this->bus->dispatch(new CommentMessage($comment->getId(), []));
+            $this->bus->dispatch(new CommentMessage($comment->getId(), $reviewUrl));
         }
 
         return $this->render('admin/review.html.twig', [
