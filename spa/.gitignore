@@ -1,0 +1,7 @@
+
+###> spa ###
+/node_modules/
+/public/
+/yarn-error.log
+/app/
+###< spa ###
