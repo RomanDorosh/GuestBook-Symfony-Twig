@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="es" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="acVpEs4" resname="You are logged in as">
+        <source>You are logged in as</source>
+        <target>Ha iniciado la sesión como</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>Salir</target>
+      </trans-unit>
+      <trans-unit id="dDUw20Q" resname="Please sign in">
+        <source>Please sign in</source>
+        <target>Por favor, regístrese</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target>Nombre de usuario</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>Contraseña</target>
+      </trans-unit>
+      <trans-unit id="eOy4.6V" resname="Conference Guestbook">
+        <source>Conference Guestbook</source>
+        <target>Libro de visitas de la conferencia</target>
+      </trans-unit>
+      <trans-unit id="zI.Z63_" resname="Welcome!">
+        <source>Welcome!</source>
+        <target>¡Bienvenido!</target>
+      </trans-unit>
+      <trans-unit id="txv1G0N" resname="Comment reviewed, thank you!">
+        <source>Comment reviewed, thank you!</source>
+        <target>¡Comentario revisado, gracias!</target>
+      </trans-unit>
+      <trans-unit id="LiZd824" resname="Applied transition">
+        <source>Applied transition</source>
+        <target>Transición aplicada</target>
+      </trans-unit>
+      <trans-unit id="c9Kr_5n" resname="New state">
+        <source>New state</source>
+        <target>Nuevo estado</target>
+      </trans-unit>
+      <trans-unit id="TlZecGS" resname="Conference">
+        <source>Conference</source>
+        <target>Conferencia</target>
+      </trans-unit>
+      <trans-unit id="Nkkcemn" resname="No comments have been posted yet for this conference">
+        <source>No comments have been posted yet for this conference</source>
+        <target>Todavía no se han publicado comentarios para esta conferencia</target>
+      </trans-unit>
+      <trans-unit id="ilFYXWP" resname="Add your own feedback">
+        <source>Add your own feedback</source>
+        <target>Añade tus propios comentarios</target>
+      </trans-unit>
+      <trans-unit id="LNAVleg" resname="Give your feedback!">
+        <source>Give your feedback!</source>
+        <target>¡Danos tu opinión!</target>
+      </trans-unit>
+      <trans-unit id="3Mg5pAF" resname="View">
+        <source>View</source>
+        <target>Ver</target>
+      </trans-unit>
+      <trans-unit id="Dg2dPd6" resname="nb_of_comments">
+        <source>nb_of_comments</source>
+        <target>{count, plural, =0 {No hay comentarios.} =1 {1 comentario.} other {# comentarios.}}</target>
+      </trans-unit>
+      <trans-unit id="3Mg54AF" resname="Your name">
+        <source>Your name</source>
+        <target>Su nombre</target>
+      </trans-unit>
+      <trans-unit id="3Mg51pAF" resname="Text">
+        <source>Text</source>
+        <target>Texto</target>
+      </trans-unit>
+      <trans-unit id="3Mg500pAF" resname="Email">
+        <source>Email</source>
+        <target>Correo electrónico</target>
+      </trans-unit>
+      <trans-unit id="3M23g5pAF" resname="Photo">
+        <source>Photo</source>
+        <target>Foto</target>
+      </trans-unit>
+      <trans-unit id="3M211AF" resname="Submit">
+        <source>Submit</source>
+        <target>Enviar</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

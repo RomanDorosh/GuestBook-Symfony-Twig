@@ -10,7 +10,7 @@ class ConferenceControllerTest extends WebTestCase
     public function testIndex()
     {
         $client = static::createClient();
-        $client->request('GET', '/');
+        $client->request('GET', '/en/');
 
         $this->assertResponseIsSuccessful();
         $this->assertSelectorTextContains('h2', 'Give your feedback');
@@ -20,9 +20,9 @@ class ConferenceControllerTest extends WebTestCase
     public function testCommentSubmission()
     {
         $client = static::createClient();
-        $client->request('GET', '/conference/amsterdam-2019');
+        $client->request('GET', '/en/conference/edinburg-2021');
         $client->submitForm('Submit', [
-            'comment_form[author]' => 'Fabien',
+            'comment_form[author]' => 'Roman',
             'comment_form[text]' => 'Some feedback from an automated functional test',
             'comment_form[email]' => $email = 'me@automat.ed',
             // 'comment_form[photo]' => dirname(__DIR__, 2) . '/public/images/under-construction.gif',
@@ -34,21 +34,21 @@ class ConferenceControllerTest extends WebTestCase
         $comment->setState('published');
         self::$container->get(EntityManagerInterface::class)->flush();
         $client->followRedirect();
-        // $this->assertSelectorExists('div:contains("There are 2 comments")');
+        // $this->assertSelectorExists('div:contains("There are two comments")');
     }
 
     public function testConferencePage()
     {
         $client = static::createClient();
-        $crawler = $client->request('GET', '/');
+        $crawler = $client->request('GET', '/en/');
 
         $this->assertCount(2, $crawler->filter('h4'));
 
         $client->clickLink('View');
 
-        $this->assertPageTitleContains('Amsterdam');
+        $this->assertPageTitleContains('Edinburg');
         $this->assertResponseIsSuccessful();
-        $this->assertSelectorTextContains('h2', 'Amsterdam 2019');
-        // $this->assertSelectorExists('div:contains("There are 1 comments")');
+        $this->assertSelectorTextContains('h2', 'Edinburg 2021');
+        // $this->assertSelectorExists('div:contains("There are one comments")');
     }
 }
